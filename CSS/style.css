@@ -10,7 +10,6 @@ html {
 body {
     background-color: rgb(231, 237, 236);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12pt;
 }
 
 nav {
@@ -53,4 +52,30 @@ ul li a:hover {
     background-color: aquamarine;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: center;
+}
+
+#contenido {
+    color: rgb(64, 70, 88);
+    padding: 100px 20%;
+}
+
+.elemento {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(163, 173, 200);
+    margin-bottom: 100px;
+}
+
+.elemento ul li {
+    margin: 7px;
+    padding-left: 7px;
 }
