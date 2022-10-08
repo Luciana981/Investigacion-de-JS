@@ -3,13 +3,24 @@
     margin: 0;
 }
 
+:root {
+    --colorfondoprincipal: rgb(231, 237, 236);
+    --fuenteprincipal: 'Times New Roman', Times, serif;
+    --colorfondonavegador: rgb(255, 255, 255);
+    --colorborde: rgb(163, 173, 200);
+    --colorfuente: rgb(64, 70, 88);
+    --colorfuentenavegador: white;
+    --colorfondohover: aquamarine;
+    --fuentetitulos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(231, 237, 236);
-    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--colorfondoprincipal);
+    font-family: var(--fuenteprincipal);
 }
 
 nav {
@@ -17,8 +28,8 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 5;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(163, 173, 200);
+    background-color: var(--colorfondonavegador);
+    border-bottom: 1px solid var(--colorborde);
 }
 
 nav a img {
@@ -38,7 +49,7 @@ nav ul li {
 ul li a {
     margin: 0px 25px;
     text-decoration: none;
-    color: rgb(64, 70, 88);
+    color: var(--colorfuente);
     padding: 2px 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -48,8 +59,8 @@ ul li a {
 }
 
 ul li a:hover {
-    color: white;
-    background-color: aquamarine;
+    color: var(--colorfuentenavegador);
+    background-color: var(--colorfondohover);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -68,23 +79,23 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--fuentetitulos);
     font-size: 20pt;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #contenido {
-    color: rgb(64, 70, 88);
+    color: var(--colorfuente);
     padding: 100px 20%;
 }
 
 .elemento {
     margin-top: 30px;
-    background-color: white;
+    background-color: var(--colorfuentenavegador);
     padding: 20px;
     border-radius: 7px;
-    border: 1px solid rgb(163, 173, 200);
+    border: 1px solid var(--colorborde);
     margin-bottom: 100px;
 }
 
@@ -99,6 +110,6 @@ h4 {
 footer {
     width: 100%;
     height: 300px;
-    background-color: white;
-    border-top: 1px solid rgb(163, 173, 200);
+    background-color: var(--colorfuentenavegador);
+    border-top: 1px solid var(--colorborde);
 }
