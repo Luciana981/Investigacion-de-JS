@@ -198,7 +198,16 @@
             </ul>
         </div>
         <div class="elemento">
-            <h3>Formularios en JS</h3>
+            <h2>Formularios en JS</h2>
+            <h3>Obtener datos del input</h3>
+            <p>Para obtener datos del input a la hora de hacer un formulario y enviarlo tenemos tres diferentes formas.</p>
+            <ul>
+                <li>documento.getElementById(id_name): se utiliza para seleccionar el elemento de entrada Dom mediante el id que previamente le pusimos para reconocerlo, de forma sencilla podemos utilizar la propiedad value.</li>
+                <li>document.getElementsByClassName(‘class_name’): De la misma manera que con la forma mencionada anteriormente, document.getElementByClassName(‘class_name’), para seleccionar el elemento de entrada Dom, en lugar de un id, utilizamos una clase
+                    asignada anteriormente al elemento, de forma que, si tenemos muchos elementos con el mismo nombre de clase, lo que va a pasar es que nos va a ser devuelto una lista o array que contenga con las entradas Dom, lo cual puede ser resuelto
+                    si agregamos “[index_number].value” al final.</li>
+                <li>document.querySelector(‘selector’): con document.querySelector(‘selector’), justamente como su nombre lo dice, vamos a seleccionar los elementos con diferentes selectores utilizados en CSS, ya sea por id, clase, etiqueta, entre muchos.</li>
+            </ul>
         </div>
     </div>
     <footer>
