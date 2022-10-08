@@ -4,7 +4,7 @@
 }
 
 :root {
-    --colorfondoprincipal: rgb(231, 237, 236);
+    --colorfondoprincipal: rgb(176, 199, 195);
     --fuenteprincipal: 'Times New Roman', Times, serif;
     --colorfondonavegador: rgb(255, 255, 255);
     --colorborde: rgb(163, 173, 200);
@@ -72,7 +72,7 @@ h1 {
 
 h2 {
     text-align: center;
-    text-decoration: underline;
+    border-bottom: 1px solid var(--colorborde);
 }
 
 h1,
@@ -95,7 +95,6 @@ h4 {
     background-color: var(--colorfuentenavegador);
     padding: 20px;
     border-radius: 7px;
-    border: 1px solid var(--colorborde);
     margin-bottom: 100px;
 }
 
@@ -107,9 +106,39 @@ h4 {
     margin-top: 15px;
 }
 
+#contenedor {
+    display: grid;
+    grid-template-columns: 23% 24% 24% 23%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    border-top: 1px solid var(--colorborde);
+    border-left: 1px solid var(--colorborde);
+}
+
+#contenedor div {
+    color: var(--colorfuente);
+    text-align: center;
+}
+
+#contenedor2 {
+    display: grid;
+    grid-template-columns: 23% 24% 24% 23%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    border-top: 1px solid var(--colorborde);
+    border-left: 1px solid var(--colorborde);
+}
+
+#contenedor2 div {
+    color: var(--colorfuente);
+    text-align: center;
+    margin-left: -10px;
+}
+
 footer {
     width: 100%;
-    height: 300px;
+    height: 200px;
+    text-align: center;
     background-color: var(--colorfuentenavegador);
     border-top: 1px solid var(--colorborde);
 }
